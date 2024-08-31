@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"screen_uart_v2\startup_stm32f103xb.o"
+"screen_uart_v2\main.o"
+"screen_uart_v2\stm32f1xx_it.o"
+"screen_uart_v2\stm32f1xx_hal_msp.o"
+"screen_uart_v2\stm32f1xx_hal_gpio_ex.o"
+"screen_uart_v2\stm32f1xx_hal_adc.o"
+"screen_uart_v2\stm32f1xx_hal_adc_ex.o"
+"screen_uart_v2\stm32f1xx_hal.o"
+"screen_uart_v2\stm32f1xx_hal_rcc.o"
+"screen_uart_v2\stm32f1xx_hal_rcc_ex.o"
+"screen_uart_v2\stm32f1xx_hal_gpio.o"
+"screen_uart_v2\stm32f1xx_hal_dma.o"
+"screen_uart_v2\stm32f1xx_hal_cortex.o"
+"screen_uart_v2\stm32f1xx_hal_pwr.o"
+"screen_uart_v2\stm32f1xx_hal_flash.o"
+"screen_uart_v2\stm32f1xx_hal_flash_ex.o"
+"screen_uart_v2\stm32f1xx_hal_exti.o"
+"screen_uart_v2\stm32f1xx_hal_tim.o"
+"screen_uart_v2\stm32f1xx_hal_tim_ex.o"
+"screen_uart_v2\stm32f1xx_hal_uart.o"
+"screen_uart_v2\system_stm32f1xx.o"
+"screen_uart_v2\handle_led.o"
+"screen_uart_v2\handle_adc.o"
+--strict --scatter "Screen_UART_v2\Screen_UART_v2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Screen_UART_v2.map" -o Screen_UART_v2\Screen_UART_v2.axf
